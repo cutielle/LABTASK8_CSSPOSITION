@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LabTask8CSSPosition</title>
+
+        <style>
+            body{
+                background-color: linear-gradient(rgba(218, 150, 150, 0.702), rgba(255, 185, 185, 0.622));
+            }
+            .close{
+                position: fixed;
+                top: 10px;
+                right: 10px;
+                background-color: black;
+                color: white;
+                border: none;
+                border-radius: 50%;
+                padding: 10px;
+                font-size: auto;
+                cursor: pointer;
+            }
+
+            .close:hover{
+                transform: scale(1.1);
+                transition: all ease-in-out .3s;
+                box-shadow: 10% red;
+                background-color: red;
+            }
+
+            .box {
+                width: 320px;
+                height: 180px;
+                background-color: gray;
+                position: fixed;
+                bottom: 10px;
+                right: 10px;
+            }
+
+            img{
+                width: 230px;
+                height: 300px;
+                position: relative;
+                top: 50px;
+                left: 20rem;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.28);
+                border-radius: 8px;
+            }
+
+            p{
+                margin-top: 6px;
+                color: #fff;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 80%;
+                font-weight: bold;
+            }
+
+            .product-container{
+                position: relative;
+                display: block;
+                margin-bottom: 2rem;
+            }
+
+            .sale {
+                position: absolute;
+                left: 470px;
+                top: 60px;
+                background-color: rgba(0, 0, 0, 0.766);
+                height: 30px;
+                width: 80px;
+                text-align: center;
+                border-radius: 6px 0 0 6px;
+            }
+
+            .sale:hover{
+                transform: scale(1.1);
+                transition: all ease-in-out .3s;
+                border-radius: 6px;
+            }
+
+            .cart{
+                position: absolute;
+                top: 265px;
+                left: 320px;
+                background-color: #ffffffb5;
+                height: 85px;
+                width: 230px;
+                border-radius: 0 0 8px 8px;
+            }
+
+            .cart-button{
+                background-color: black;
+                color: #fff;
+                font-size: 10px;
+                height: 30px;
+                width: 40%;
+                position: relative;
+                top: 25px;
+                left: 70px;
+                border: none;
+                border-radius: 5px;
+                font-weight: 800;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.28);
+                transition: all ease-in-out .2s;
+            }
+
+            .cart-button:hover{
+                transform: scale(1.1);
+            }
+            
+        </style>
+
+    </head>
+
+    <body>
+        <button class="close">X</button>
+
+        <div class="box"></div>
+
+        <div class="product-container">
+            <div class="clothing">
+                <img src="https://i.ibb.co/zRvQYhX/pink-dress.jpg" alt="clothing">
+                <div class="sale"><p>20% OFF</p></div>
+                <div class="cart">
+                    <button class="cart-button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-container">
+            <div class="clothing">
+                <img src="https://i.ibb.co/fHMMfX4/blue-dress.jpg" alt="clothing">
+                <div class="sale"><p>20% OFF</p></div>
+                <div class="cart">
+                    <button class="cart-button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
